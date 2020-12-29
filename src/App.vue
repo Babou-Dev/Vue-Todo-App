@@ -1,5 +1,5 @@
 <template>
-  <h1>Vue 3 Todo App by BabouDeb</h1>
+  <h1>Vue 3 Todo App by BabouDev</h1>
   <form @submit.prevent="addNewTodo">
       <label>New Todo Here =></label>
       <input v-model="newTodo" name="newTodo">
@@ -35,7 +35,7 @@ export default {
       newTodo.value = '';
     }
 
-    function toggleDown(todo) {
+    function toggleDone(todo) {
       todo.done = !todo.done;
     }
 
@@ -55,7 +55,7 @@ export default {
       newTodo,
       addNewTodo,
       todos,
-      toggleDown,
+      toggleDone,
       removeTodo,
       markAllDone,
       removeAllTodos,
